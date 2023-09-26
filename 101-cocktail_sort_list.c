@@ -70,7 +70,8 @@ void swap_node_behind(listint_t **list, listint_t **tail, listint_t **shaker)
  * @list: A pointer to the head of a listint_t doubly-linked list.
  *
  * Description: This function sorts a list of integers in ascending order
- * using the cocktail shaker sort algorithm and prints the list after each swap.
+ * using the cocktail shaker sort algorithm and prints the list after
+ * each swap.
  */
 void cocktail_sort_list(listint_t **list)
 {
