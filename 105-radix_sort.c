@@ -15,7 +15,8 @@ void radix_counting_sort(int *array, size_t size, int sig, int *buff);
  *
  * Return: The maximum integer in the array.
  *
- * Description: This function calculates and returns the maximum value in the array.
+ * Description: This function calculates and returns
+ *			the maximum value in the array.
  */
 int get_max(int *array, int size)
 {
