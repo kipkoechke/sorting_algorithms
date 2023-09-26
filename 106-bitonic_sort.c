@@ -6,7 +6,9 @@
 
 /* Function prototypes */
 void swap_ints(int *a, int *b);
-void bitonic_merge(int *array, size_t size, size_t start, size_t seq, char flow);
+void bitonic_merge(
+		int *array, size_t size, size_t start, size_t seq, char flow);
+
 void bitonic_seq(int *array, size_t size, size_t start, size_t seq, char flow);
 
 /**
@@ -33,10 +35,11 @@ void swap_ints(int *a, int *b)
  * @seq: The size of the sequence to sort.
  * @flow: The direction to sort in (UP or DOWN).
  *
- * Description: This function sorts a bitonic sequence within the array
- * based on the specified direction (flow).
+ * Description: This function sorts a bitonic sequence within the
+ * array based on the specified direction (flow).
  */
-void bitonic_merge(int *array, size_t size, size_t start, size_t seq, char flow)
+void bitonic_merge(
+		int *array, size_t size, size_t start, size_t seq, char flow)
 {
 	size_t i, jump = seq / 2;
 
@@ -61,8 +64,8 @@ void bitonic_merge(int *array, size_t size, size_t start, size_t seq, char flow)
  * @seq: The size of a block of the building bitonic sequence.
  * @flow: The direction to sort the bitonic sequence block in (UP or DOWN).
  *
- * Description: This function converts a block of the array into a bitonic sequence
- * based on the specified direction (flow).
+ * Description: This function converts a block of the array into a
+ * bitonic sequence based on the specified direction (flow).
  */
 void bitonic_seq(int *array, size_t size, size_t start, size_t seq, char flow)
 {
